@@ -12,8 +12,8 @@ export default function Navbar() {
                </div>
                <div className='mt-5 nav-contents'>
                          <nav>
-                              <a href="/" className='px-3 text-dark'>Home</a>
-                              <a href="/" className='px-3 text-dark'>About</a>
+                              <a href="#home" className='px-3 text-dark active'>Home</a>
+                              <a href="#about" className='px-3 text-dark'>About</a>
                               <a href="/" className='px-3 text-dark'>Works</a>
                               <a href="/" className='px-3 text-dark'>Contact</a>
                          </nav>
@@ -29,7 +29,7 @@ export default function Navbar() {
           return (
           <nav className="navbar navbar-expand-lg bg-body-tertiary">
                <div className="container-fluid">
-                    <a className="navbar-brand" href="/">
+                    <a className="navbar-brand" href="#home">
                          <img src={logoBlack} alt="" height='50px' width='70px' />
                     </a>
                     <button className="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,7 @@ export default function Navbar() {
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                          <div className="navbar-nav">
                               <a className="nav-link active" aria-current="page" href="/">Home</a>
-                              <a className="nav-link" href="/">About</a>
+                              <a className="nav-link" href="#about">About</a>
                               <a className="nav-link" href="/">Works</a>
                               <a className="nav-link" href="/">Contact</a>
                          </div>

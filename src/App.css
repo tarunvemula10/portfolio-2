@@ -8,9 +8,13 @@
      scroll-behavior: smooth;
      box-sizing: border-box;
 }
+* ::-webkit-scrollbar {
+     display: none;
+}
 header {
      width: 70px;
      height: 100vh;
+     z-index: 999;
 }
 header .nav-contents {
      height: 80vh;
@@ -47,13 +51,116 @@ header .state-icon:hover {
 .content-section {
      height: 100vh;
      width: 100%;
+     z-index: 1;
+     overflow-y: auto;
+}
+.content-section a {
+     transition: 300ms;
+     text-decoration: none;
 }
 .home .container {
-     margin-top: 35%;
+     padding-top: 5%;
 }
 .home .container h1 {
      font-size: 60px;
      text-shadow: 5px 5px #00000026;
+}
+.string {
+     height: 170px;
+     width: 10px;
+}
+.cap {
+     height: 150px;
+     width: 200px;
+     border-radius: 100% 100% 10% 10%;
+     position: relative;
+}
+.spot-light {
+     position: absolute;
+     top: 17rem;
+     z-index: -1;
+}
+.spot-light .circle-1 {
+     height: 80px;
+     width: 100px;
+     background-color: black;
+     border-radius: 0% 0% 100% 100%;
+     cursor: pointer;
+     box-shadow: 1px 20px 120px #ffffff;
+}
+.spot-light .circle-2 {
+     height: 80px;
+     width: 100px;
+     background-color: black;
+     border-radius: 0% 0% 100% 100%;
+     cursor: pointer;
+     box-shadow: 1px 20px 150px #ffffff;
+}
+.spot-light .circle-3 {
+     height: 80px;
+     width: 100px;
+     background-color: black;
+     border-radius: 0% 0% 100% 100%;
+     cursor: pointer;
+     box-shadow: 1px 20px 200px #ffffff;
+}
+.spot-light .circle-4 {
+     height: 80px;
+     width: 100px;
+     background-color: black;
+     border-radius: 0% 0% 100% 100%;
+     cursor: pointer;
+     box-shadow: 1px 20px 250px #ffffff;
+}
+.bulb-off {
+     height: 80px;
+     width: 100px;
+     border-radius: 0% 0% 100% 100%;
+     cursor: pointer;
+     position: relative;
+}
+.bulb-on {
+     height: 80px;
+     width: 100px;
+     border-radius: 0% 0% 100% 100%;
+     cursor: pointer;
+     position: relative;
+     box-shadow: 1px 25px 100px #fff;
+}
+.bulb-section {
+     position: relative;
+}
+.skills-belt {
+     width: 95%;
+     top: 0rem;
+     position: absolute;
+     margin: auto;
+     z-index: -2;
+}
+.skills-belt h1{
+     font-size: 5rem;
+     width: fit-content;
+     margin: 10px auto;
+     padding: 5px;  
+     box-shadow: 10px 5px 0px #7a7a7a;
+}
+.about-section {
+     width: 90%;
+     height: 100vh;
+}
+.about-section .container {
+     width: 75%;
+     margin: auto;
+}
+.about-section .container h1 {
+     font-size: 70px;
+     color: #fff;
+     text-shadow: 0px 0px 1px #000;
+}
+.about-section .container p {
+     text-align: justify;
+     width: 120%;
+     word-break: break-all;
 }
 @media (max-width: 700px) {
      header {
@@ -77,5 +184,8 @@ header .state-icon:hover {
      header .navbar-nav a {
           text-align: center;
           font-size: 45px;
+     }
+     .skills-belt h1 {
+          display: none;
      }
 }

@@ -1,7 +1,10 @@
 import React from 'react';
+import Light from './Light';
 
 export default function Home() {
      return (
+     <>
+     <Light/>
      <section className='home' id='home'>
           <div className="container">
                <div>
@@ -11,5 +14,6 @@ export default function Home() {
                </div>
           </div>
      </section>
+     </>
      )
 }
