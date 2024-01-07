@@ -144,15 +144,15 @@ header .state-icon:hover {
      padding: 5px;  
      box-shadow: 10px 5px 0px #7a7a7a;
 }
-.about-section {
+.about-section, .works-section {
      width: 90%;
      height: 100vh;
 }
-.about-section .container {
+.about-section .container, .works-section .container {
      width: 75%;
      margin: auto;
 }
-.about-section .container h1 {
+.about-section .container h1, .works-section .container h1 {
      font-size: 70px;
      color: #fff;
      text-shadow: 0px 0px 1px #000;
@@ -161,6 +161,23 @@ header .state-icon:hover {
      text-align: justify;
      width: 120%;
      word-break: break-all;
+}
+.works-section {
+     overflow: hidden;
+}
+.accordion {
+     overflow-y: auto;
+}
+.accordion .accordion-item {
+     border: none;
+}
+.accordion-button:focus {
+     box-shadow: none;
+     background-color: transparent;
+     color: #000;
+}
+.accordion-body a {
+     border-bottom: 2px solid black;
 }
 @media (max-width: 700px) {
      header {
