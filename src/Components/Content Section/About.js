@@ -24,9 +24,11 @@ export default function About() {
                          <h5>MY SKILLS : </h5>
                          <p>HTML, CSS, Javascript, Java, J2EE, React, SQL</p>
                          <h5>TOOLS : </h5>
-                         <p>Vs code, Eclipse IDE, Intellij idea, Github</p>
-                         <a href="/" className="btn btn-dark border-2">MY WORKS</a>
-                         <a className="btn btn-outline-dark border-2 mx-2" href={resume} target='_blank' rel='noreferrer'>MY CV <i className="fa-solid fa-arrow-up-right-from-square px-2"></i></a>
+                         <p>Visual Studio code, Eclipse, Intellij idea, Github</p>
+                         <div className="my-2">
+                              <a href="/" className="btn btn-dark border-2">MY WORKS</a>
+                              <a className="btn btn-outline-dark border-2 mx-2" href={resume} target='_blank' rel='noreferrer'>MY CV <i className="fa-solid fa-arrow-up-right-from-square px-2"></i></a>
+                         </div>
                     </div>
                </div>
           </div>

@@ -4,21 +4,21 @@ export default function Works() {
 
      const accordionItems = (projectId, projectTitle, projectDescription, projectLink) => {
           return (
-               <>
-               <div className="accordion-item border-bottom">
-                    <h2 className="accordion-header">
-                         <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target={`#${projectId}`} aria-expanded="true" aria-controls={`${projectId}`}>
-                              {projectTitle}
-                         </button>
-                    </h2>
-                    <div id={projectId} className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                         <div className="accordion-body">
-                              <p>{projectDescription}</p>
-                              <a href={projectLink} className="text-dark" target='_blank' rel='noreferrer'>VISIT WEBSITE <i className="fa-solid fa-arrow-up-right-from-square px-2"></i></a>
+               <div key={projectId}>
+                    <div className="accordion-item border-bottom">
+                         <h2 className="accordion-header">
+                              <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target={`#${projectId}`} aria-expanded="true" aria-controls={`${projectId}`}>
+                                   {projectTitle}
+                              </button>
+                         </h2>
+                         <div id={projectId} className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div className="accordion-body">
+                                   <p>{projectDescription}</p>
+                                   <a href={projectLink} className="text-dark" target='_blank' rel='noreferrer'>VISIT WEBSITE <i className="fa-solid fa-arrow-up-right-from-square px-2"></i></a>
+                              </div>
                          </div>
                     </div>
                </div>
-               </>
           );
      }
 
