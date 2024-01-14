@@ -1,6 +1,6 @@
 import { React, useEffect, useRef } from 'react';
 
-export default function Cursor() {
+export default function Cursor(props) {
 
      const cursorDot = useRef(null);
      const cursorOutline = useRef(null);
@@ -26,8 +26,8 @@ export default function Cursor() {
 
      return (
      <>
-          <div className="cursor-dot" ref={cursorDot}></div>
-          <div className="cursor-circle" ref={cursorOutline}></div>
+          <div className={`cursor-dot ${props.toggleDotColor}`} ref={cursorDot}></div>
+          <div className={`cursor-circle ${props.toggleCircleColor}`} ref={cursorOutline}></div>
      </>
      )
 }

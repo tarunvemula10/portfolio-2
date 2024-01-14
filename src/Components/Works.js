@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Works() {
 
@@ -80,7 +81,7 @@ export default function Works() {
                                    return accordionItems(contents.projectId, contents.projectTitle, contents.projectDescription, contents.projectLink);
                               })}
                          </div>
-                         <a href="/" className="btn btn-dark my-4">CONTACT ME</a>
+                         <Link to="/contact" className="btn btn-dark my-4">CONTACT ME</Link>
                     </div>
                </div>
           </div>
