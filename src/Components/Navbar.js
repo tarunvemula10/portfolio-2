@@ -13,7 +13,7 @@ export default function Navbar(props) {
                </div>
                <div className='mt-5 nav-contents'>
                     <nav>
-                         <NavLink to="/portfolio" className={`px-3 ${props.textColor}`}>Home</NavLink>
+                         <NavLink to="/" className={`px-3 ${props.textColor}`}>Home</NavLink>
                          <NavLink to="/about" className={`px-3 ${props.textColor}`}>About</NavLink>
                          <NavLink to="/works" className={`px-3 ${props.textColor}`}>Works</NavLink>
                          <NavLink to="/contact" className={`px-3 ${props.textColor}`}>Contact</NavLink>
@@ -30,7 +30,7 @@ export default function Navbar(props) {
           return (
           <nav className={`navbar navbar-expand-lg ${props.navBackground}`}>
                <div className="container-fluid">
-                    <Link className="navbar-brand" to="/portfolio">
+                    <Link className="navbar-brand" to="/">
                          <img src={(props.isDark) ? logoWhite : logoBlack} alt="" height='50px' width='70px' />
                     </Link>
                     <button className={`d-flex justify-content-center align-items-center navbar-toggler shadow-none border-${props.isDark ? 'light' : 'dark'}`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,7 @@ export default function Navbar(props) {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                          <div className="navbar-nav">
-                              <NavLink className={`nav-link ${props.textColor}`} aria-current="page" to="/portfolio">Home</NavLink>
+                              <NavLink className={`nav-link ${props.textColor}`} aria-current="page" to="/">Home</NavLink>
                               <NavLink className={`nav-link ${props.textColor}`} to="/about">About</NavLink>
                               <NavLink className={`nav-link ${props.textColor}`} to="/works">Works</NavLink>
                               <NavLink className={`nav-link ${props.textColor}`} to="/contact">Contact</NavLink>
