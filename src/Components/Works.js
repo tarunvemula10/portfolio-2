@@ -1,21 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Works() {
+export default function Works(props) {
 
      const accordionItems = (projectId, projectTitle, projectDescription, projectLink) => {
           return (
                <div key={projectId}>
-                    <div className="accordion-item border-bottom">
+                    <div className={`accordion-item border-bottom ${props.accordionBackground}`}>
                          <h2 className="accordion-header">
-                              <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target={`#${projectId}`} aria-expanded="true" aria-controls={`${projectId}`}>
+                              <button className={`accordion-button ${props.accordionBackground} ${props.textColor}`} type="button" data-bs-toggle="collapse" data-bs-target={`#${projectId}`} aria-expanded="true" aria-controls={`${projectId}`}>
                                    {projectTitle}
                               </button>
                          </h2>
-                         <div id={projectId} className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                         <div id={projectId} className={`accordion-collapse collapse ${props.textColor}`} data-bs-parent="#accordionExample">
                               <div className="accordion-body">
                                    <p>{projectDescription}</p>
-                                   <a href={projectLink} className="text-dark" target='_blank' rel='noreferrer'>VISIT WEBSITE <i className="fa-solid fa-arrow-up-right-from-square px-2"></i></a>
+                                   <a href={projectLink} className={`${props.textColor} ${props.toggleBorderColor}`} target='_blank' rel='noreferrer'>VISIT WEBSITE <i className="fa-solid fa-arrow-up-right-from-square px-2"></i></a>
                               </div>
                          </div>
                     </div>
@@ -73,7 +73,7 @@ export default function Works() {
           <div className="container">
                <div className="row">
                     <div className="col-md d-flex align-items-center">
-                         <h1>WORKS</h1>
+                         <h1 className={`${props.toggleHeadingColor}`}>WORKS</h1>
                     </div>
                     <div className="col-md">
                          <div className="accordion">
@@ -81,7 +81,7 @@ export default function Works() {
                                    return accordionItems(contents.projectId, contents.projectTitle, contents.projectDescription, contents.projectLink);
                               })}
                          </div>
-                         <Link to="/contact" className="btn btn-dark my-4">CONTACT ME</Link>
+                         <Link to="/contact" className={`btn btn-${props.toggleButtonColor} my-4`}>CONTACT ME</Link>
                     </div>
                </div>
           </div>

@@ -62,8 +62,24 @@ function App() {
                 toggleButtonColor = {isDark ? 'light' : 'dark'}
               />
             }/>
-            <Route path='/works' element={<Works/>}/>
-            <Route path='/contact' element={<Contact/>}/>
+            <Route path='/works' element={
+              <Works
+                accordionBackground = {isDark ? 'bg-dark' : 'bg-white'}
+                textColor = {currentTheme.textColor}
+                toggleHeadingColor = {isDark ?  'white' : 'black'}
+                toggleButtonColor = {isDark ? 'light' : 'dark'}
+                toggleBorderColor = {isDark ? 'white' : 'black'}
+              />
+            }/>
+            <Route path='/contact' element={
+              <Contact
+                themeColor = {isDark ? 'light' : 'dark'}
+                textColor = {currentTheme.textColor}
+                toggleHeadingColor = {isDark ?  'white' : 'black'}
+                toggleButtonColor = {isDark ? 'light' : 'dark'}
+                placeHolderColor = {isDark ? 'white' : 'black'}
+              />
+            }/>
           </Routes>
         </section>
       </div>
