@@ -44,7 +44,7 @@ function App() {
         />
         <section className={`content-section ${isDark ? 'bg-dark' : 'bg-white'}`}>
           <Routes>
-            <Route path='/portfolio' element = {
+            <Route path='/' element = {
               <Home 
               lightClass = {lightStatus.lightClass}
               lightColor = {lightStatus.lightColor}
