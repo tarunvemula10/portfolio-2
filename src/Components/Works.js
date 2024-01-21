@@ -63,6 +63,17 @@ export default function Works(props) {
                through enticing itineraries and immersive visuals in a user-friendly 
                interface. Welcome to a travel experience where wanderlust meets digital convenience.`,
                projectLink : 'https://tharunvemula-travelersadda.netlify.app/'
+          },{
+               projectId : 'collapseFive',
+               projectTitle : `Tic Tac Toe`,
+               projectDescription : `
+               Experience the timeless fun of Tic Tac Toe with an exciting twist – challenge a 
+               computer opponent or play against a friend! Enjoy the classic two-player mode 
+               or test your strategic skills against the computer. The game dynamically alternates 
+               the starting player, ensuring fairness. Click, strategize, and aim for victory in 
+               this engaging battle of wits, whether you're facing off against a friend or our 
+               computer opponent!`,
+               projectLink : 'https://tharunvemula-tic-tac-toe.netlify.app/'
           }
      ];
 
